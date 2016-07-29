@@ -1,0 +1,128 @@
+html
+{
+				background:
+				radial-gradient(black 15%, transparent 16%) 0 0,
+				radial-gradient(black 15%, transparent 16%) 8px 8px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+				background-color:#282828;
+				background-size:16px 16px;
+}
+html *
+{
+	border-color: lightgray !important;
+}
+.messageblob
+{
+	border-style: solid;
+	border-width:1px;
+	border-radius: 15;
+	margin-bottom:15px;
+	margin-right:8%;
+	background:white;
+	padding: 5 5 5 5;
+	
+}
+.messageblobme
+{
+	border-style: solid;
+	border-width:1px;
+	border-radius: 15;
+	margin-left:8%;
+	margin-bottom:15px;
+	background: lightblue;
+	padding: 5 5 5 5;
+}
+.hashtag
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: darkblue;
+}
+a
+{
+	 color: blue;
+}
+.bywho
+{
+	overflow: auto;
+	padding: 0 6 10 6;
+	margin: auto;
+	float:left;
+	font-size:13px;
+	cursor: default;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.bywhoin
+{
+	margin-top:4;
+}
+.byme
+{
+	overflow: auto;
+	padding: 0 6 10 6;
+	margin: auto;
+	float:right;
+	font-size:13px;
+	cursor: default;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.tstamp
+{
+
+}
+.nocopy
+{
+	cursor: default;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding-top: 10;
+	padding-bottom: 3;
+}
+body
+{
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
+p
+{
+	margin-top:1px;
+	margin-left:1px;
+	margin-right:1px;
+	margin-bottom:1px;
+}
+.day
+{
+	background:lightgrey;
+	width: 20%;
+	margin: auto;
+	margin-bottom: 10px;
+	border-radius: 15;
+	padding: 2 6 5 6;
+	text-align: center;
+	border-style: solid;
+	border-width:1px;
+	font-size:13px;
+	cursor: default;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+

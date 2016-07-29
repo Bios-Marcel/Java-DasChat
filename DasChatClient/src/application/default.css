@@ -1,0 +1,29 @@
+.buttonCornered
+{
+	-fx-background-radius:0;
+	-fx-border-radius: 0;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0,0,0,0;
+}
+.html-editor:contains-focus
+ {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0,0,0,0;
+}
+.hyperlink
+{
+	-fx-font-weight: bold;
+	-fx-text-fill: darkblue;
+}
+.labelTitleSettings
+{
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+.daschattitle
+{
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;	
+}

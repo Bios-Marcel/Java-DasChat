@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.HTMLEditor?>
+<?import javafx.scene.web.WebView?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="DasChat">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#getClients" text="Verbundene Clients anzeigen" />
+              <MenuItem mnemonicParsing="false" onAction="#showSettings" text="Einstellungen" />
+              <CheckMenuItem fx:id="notDisturbCheck" mnemonicParsing="false" onAction="#toggleNotDisturb" text="Nicht stören" />
+              <SeparatorMenuItem />
+              <MenuItem mnemonicParsing="false" onAction="#disconnect" text="Schließen" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Filter">
+          	<items>
+          		<MenuItem mnemonicParsing="false" onAction="#chooseMessageFilters" text="Filter setzen" />
+          		<MenuItem mnemonicParsing="false" onAction="#resetFilters" text="Filter zurücksetzen" />
+          	</items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Hilfe">
+            <items>            	
+              <MenuItem mnemonicParsing="false" onAction="#openManual" text="Benutzerhandbuch" />
+              <SeparatorMenuItem />
+              <MenuItem mnemonicParsing="false" onAction="#openAboutDasChat" text="Über DasChat" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" orientation="HORIZONTAL" VBox.vgrow="ALWAYS">
+         <items>
+            <VBox styleClass="leftVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" SplitPane.resizableWithParent="false">
+               <children>
+                  <HTMLEditor fx:id="editor" onKeyPressed="#editorKeyListener" prefHeight="381.0" prefWidth="540.0" VBox.vgrow="ALWAYS" />
+                  <Button styleClass="sendButton" fx:id="sendButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sendButtonClicked" prefWidth="540.0" text="Senden" />
+               </children>
+            </VBox>
+            <VBox fx:id="rightVBox" styleClass="rightVBox">
+               <children>
+                  <VBox fx:id="tagBox" >
+                     <children>
+                        <StackPane>
+                           <children>
+                              <Label text="Aktive Filter" />
+                           </children>
+                        </StackPane>
+                        <ScrollPane styleClass="hashtagscrollbar" fx:id="scrollPaneTags" vbarPolicy="NEVER">
+                           <content>
+                              <HBox styleClass="hashtagscrollbar" fx:id="activeTagsPane" maxHeight="17.0" />
+                           </content>
+                         </ScrollPane>
+                     </children>
+                  </VBox>
+                  <StackPane minWidth="225.0" prefWidth="540.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <WebView fx:id="beitragsWebView" prefHeight="-1.0" prefWidth="-1.0" />
+                     </children>
+                     <!--effect>
+                        <InnerShadow />
+                     </effect-->
+                  </StackPane>
+               </children>
+            </VBox>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>

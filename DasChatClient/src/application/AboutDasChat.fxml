@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="190.0" maxWidth="369.0" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" styleClass="daschattitle" stylesheets="@application.css" text="Über das Chat">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon-small.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="12.0" top="12.0" />
+         </VBox.margin>
+      </ImageView>
+      <Label fx:id="versionLabel" text="VER" />
+      <Label text="DasChat wird von Marcel Schramm entwickelt sowie auch supportet.">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <Label text="Bei Problemen und Fragen wenden Sie sich bitte an: marceloschr@googlemail.com">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

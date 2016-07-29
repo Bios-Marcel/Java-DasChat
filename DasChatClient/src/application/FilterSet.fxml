@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.CheckListView?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+	  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+	</padding>
+	<children>
+	   <TextField fx:id="filterField" promptText="Suchbegriff eingeben" />
+	   <Label text="Filter">
+	      <padding>
+	         <Insets bottom="4.0" top="4.0" />
+	      </padding>
+	   </Label>
+	   <CheckListView fx:id="availableFiltersCheckListView" prefHeight="200.0" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectAllFilters" text="Alle selektieren" />
+            <Button mnemonicParsing="false" onAction="#deselectAllFilters" text="Alle deselektieren">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="4.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="4.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding>
+      </HBox>
+      <CheckBox fx:id="showUntaggedCheckBox" mnemonicParsing="false" text="Nachrichten ohne Tags anzeigen">
+         <padding>
+            <Insets bottom="4.0" top="4.0" />
+         </padding>
+      </CheckBox>
+      <ButtonBar buttonMinWidth="0.0">
+         <buttons>
+      	   <Button onAction="#applyFilters" text="Filter anwenden" />
+            <Button mnemonicParsing="false" onAction="#resetFilters" snapToPixel="false" text="Filter zurücksetzen" />
+         </buttons>
+         <padding>
+            <Insets top="4.0" />
+         </padding>
+      </ButtonBar>
+	</children>
+</VBox>

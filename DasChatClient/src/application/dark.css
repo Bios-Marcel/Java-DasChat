@@ -1,0 +1,118 @@
+*
+{
+    -fx-text-fill: white;
+    -fx-base: black;
+}
+.html-editor:contains-focus
+ {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0,0,0,0;
+}
+
+.scroll-bar .thumb
+{
+	-fx-background-color: white;
+}
+
+.scroll-bar .decrement-button .decrement-arrow
+{
+	-fx-background-color: white;
+}
+.scroll-bar .increment-button .increment-arrow
+{
+	-fx-background-color: white;
+}
+
+.button
+{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 3 5 3 5;
+}
+
+.text-field
+{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 3 5 3 5;
+}
+
+.check-box:selected .mark {
+   -fx-mark-color: white;
+}
+
+.radio-button
+{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.toggle-button
+{
+    -fx-border-radius: 1;
+}
+
+.toggle-button:selected
+{
+    -fx-border-radius: 0;
+}
+
+.custom-color-dialog  .text-field
+{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.custom-color-dialog .controls-pane .customcolor-controls-background {
+
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.custom-color-dialog .controls-pane .slider .track {
+
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.custom-color-dialog .controls-pane .slider .thumb{
+
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.color-palette 
+{	
+	-fx-background-radius: 0;
+}
+
+.tab-pane .tab
+{
+	-fx-background-radius: 0;
+	-fx-border-radius: 0;
+} 
+.color-picker
+{
+    -fx-border-radius: 1;
+    -fx-background-radius: 0;
+    -fx-padding: 1 1 1 1;
+}
+.spinner
+{
+    -fx-border-radius: 1;
+    -fx-background-radius: 0;
+}
+.spinner .increment-arrow-button
+{
+    -fx-border-radius: 1;
+    -fx-background-radius: 0;
+    -fx-padding: 3 5 3 5;
+}
+.spinner .decrement-arrow-button
+{
+    -fx-border-radius: 1;
+    -fx-background-radius: 0;
+    -fx-padding: 3 5 3 5;
+}
+.spinner .text-input
+{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}

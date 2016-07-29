@@ -1,0 +1,4 @@
+.html-editor .web-view
+{
+	-fx-max-height: 1000px;
+}

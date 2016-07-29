@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="unitTests"/>
+	<classpathentry excluding="application/InputDialogController.java" kind="src" path="src"/>
+	<classpathentry kind="lib" path="dependencies/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="dependencies/jsoup-1.9.1.jar"/>
+	<classpathentry kind="lib" path="dependencies/LibFX-0.3.0.jar" sourcepath="C:/workspaces/source/LibFX-0.3.0-sources.jar"/>
+	<classpathentry kind="lib" path="dependencies/TrayNotificationEdit.jar"/>
+	<classpathentry kind="lib" path="dependencies/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="dependencies/controlsfx-8.40.10.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DasChatShared"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Util"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

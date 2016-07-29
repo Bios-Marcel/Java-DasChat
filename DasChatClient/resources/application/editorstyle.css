@@ -1,0 +1,12 @@
+body
+{
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
+p
+{
+	margin-top:1px;
+	margin-left:1px;
+	margin-right:1px;
+	margin-bottom:1px;
+}
